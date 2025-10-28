@@ -1,0 +1,12 @@
+{
+  "name": "ticket-app-twig",
+  "version": "1.0.0",
+  "description": "A modern, responsive ticket management system built with **PHP** and **Twig**. This is a PHP/Twig conversion of the React and Vue ticket management app, providing an intuitive interface for creating, tracking, and managing tickets efficiently.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
