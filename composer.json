@@ -1,0 +1,16 @@
+{
+  "name": "ticket-app/twig",
+  "description": "Ticket Management App using PHP and Twig",
+  "type": "project",
+  "require": {
+    "php": "^8.0",
+    "twig/twig": "^3.10",
+    "symfony/polyfill-php80": "^1.29"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
+

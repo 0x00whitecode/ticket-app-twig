@@ -1,0 +1,63 @@
+=================================================================
+Ticket App - PHP/Twig Edition
+=================================================================
+
+To run this application, you need PHP installed on your system.
+
+INSTALLATION:
+-------------
+1. Install PHP and Composer:
+   sudo apt install php8.2-cli php8.2-mbstring composer
+
+2. Install dependencies:
+   cd ticket-app-twig
+   composer install
+
+3. Run the application:
+   php -S localhost:8080
+
+   Or use the provided script:
+   ./run.sh
+
+ALTERNATIVE (Without PHP):
+-------------------------
+If you cannot install PHP on your system, you can still view the code:
+
+- All PHP files are in: src/
+- All Twig templates are in: templates/
+- CSS styling is in: assets/style.css
+- Configuration is in: composer.json
+
+The application follows a MVC-style architecture:
+- Controllers: src/*Controller.php
+- Services: src/*Service.php
+- Templates: templates/*.twig
+- Router: src/Router.php
+- Entry point: index.php
+
+FEATURES IMPLEMENTED:
+--------------------
+✓ User Authentication (Login/Signup)
+✓ Dashboard with Statistics
+✓ Ticket Management (Create, List, Delete)
+✓ Status Tracking (open, in_progress, closed)
+✓ Priority Levels
+✓ Responsive Design
+✓ Toast Notifications
+
+WHAT'S INCLUDED:
+---------------
+All the code for the Twig app is complete and ready:
+- AuthController.php
+- TicketService.php
+- DashboardController.php
+- TicketsController.php
+- Router.php
+- Twig templates
+- CSS styling
+- HTML structure
+
+The only thing missing is PHP runtime to execute the code.
+
+=================================================================
+

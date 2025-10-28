@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNG Collaboration ticket villa — Manage work, effortlessly</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <div class="app-root">
+        <header class="site-header">
+            <div class="container header-inner">
+                <a href="/" class="brand">HCTV</a>
+                
+                <nav class="nav">
+                    <a href="/">Home</a>
+                    {% if isAuth %}
+                        <a href="/dashboard">Dashboard</a>
+                        <a href="/tickets">Tickets</a>
+                        <a href="/auth/logout" class="link-ghost">Logout</a>
+                    {% else %}
+                        <a href="/auth/login">Login</a>
+                        <a href="/auth/signup">Get Started</a>
+                    {% endif %}
+                </nav>
+            </div>
+        </header>
+        
+        <main class="container main-content">
+            {% block content %}{% endblock %}
+        </main>
+        
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <p>© TicketApp — a demo project. Accessible and responsive.</p>
+                <p>Session key: <code>ticketapp_session</code></p>
+            </div>
+        </footer>
+        
+        {% if message %}
+        <div class="toast {{ msgType }}">
+            {{ message }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
+

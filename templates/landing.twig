@@ -1,0 +1,47 @@
+{% extends 'base.twig' %}
+
+{% block content %}
+<section class="hero">
+    <div class="container hero-inner">
+        <div class="hero-content">
+            <h1 class="hero-title">HNG Collaboration ticket villa — Manage work, effortlessly</h1>
+            <p class="hero-sub">A simple ticket management demo built with PHP and Twig. Create, edit, and track tickets with ease.</p>
+            <div class="hero-ctas">
+                <a href="/auth/login" class="btn btn-primary">Login</a>
+                <a href="/auth/signup" class="btn btn-ghost">Get Started</a>
+            </div>
+        </div>
+        <div class="hero-decor">
+            <div class="circle circle-1" aria-hidden></div>
+            <div class="circle circle-2" aria-hidden></div>
+        </div>
+    </div>
+    <img src="/assets/wave.svg" alt="decorative wave" class="hero-wave" />
+    <div class="container">
+        <div class="hero-features">
+            <div class="feature-card">
+                <div class="feature-icon">+</div>
+                <div>
+                    <div class="feature-title">Create & Track</div>
+                    <div class="feature-desc">Quickly create tickets, add details and track progress across stages.</div>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚙</div>
+                <div>
+                    <div class="feature-title">Collaborate</div>
+                    <div class="feature-desc">Share tickets with teammates and keep updates centralized.</div>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔔</div>
+                <div>
+                    <div class="feature-title">Notifications</div>
+                    <div class="feature-desc">Receive toast feedback for actions and validation.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
